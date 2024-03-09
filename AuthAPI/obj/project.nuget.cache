@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hCxoAVmNvJRVv+NKNoJUlaLwrVaodYm/aEvHkdIO1bCSru6jlMZWAjnxgYNQuWVwuv2D5t2ohYTPSPA8TzZq3Q==",
+  "dgSpecHash": "Mt5Y8lGVyedG8qH2IMQNzveyQ/NYWzj++C/l79BIMkm0JufuEeiXoIPkyDOxekgbJ3FaWu6OJWqYVKX7z2yrQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\authapi\\AuthAPI.csproj",
+  "projectFilePath": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\AuthAPI\\AuthAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alvar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\alvar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

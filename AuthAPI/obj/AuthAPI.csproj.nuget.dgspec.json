@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\authapi\\AuthAPI.csproj": {}
+    "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\AuthAPI\\AuthAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\authapi\\AuthAPI.csproj": {
+    "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\AuthAPI\\AuthAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\authapi\\AuthAPI.csproj",
+        "projectUniqueName": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\AuthAPI\\AuthAPI.csproj",
         "projectName": "AuthAPI",
-        "projectPath": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\authapi\\AuthAPI.csproj",
+        "projectPath": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\AuthAPI\\AuthAPI.csproj",
         "packagesPath": "C:\\Users\\alvar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\authapi\\obj\\",
+        "outputPath": "C:\\Users\\alvar\\Documents\\Development\\MainSolution\\AuthAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
