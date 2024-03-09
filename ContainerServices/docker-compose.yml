@@ -1,0 +1,55 @@
+version: '3.8'
+services:
+  auth.db:
+    image: postgres:bullseye
+    restart: always
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: AuthAPI
+    volumes:
+      - ./.containers/postgres-db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  auth.cache:
+    image: redis:alpine
+    restart: always
+    container_name: redis-cache
+    ports:
+      - "6379:6379"
+
+  auth.nosql:
+    image: mcr.microsoft.com/cosmosdb/linux/azure-cosmos-emulator:latest
+    restart: always
+    container_name: cosmos-nosql
+    tty: true
+    # mem_limit: 2G
+    # cpu_count: 2
+    ports:
+      - "8081:8081"
+      - "10251:10251"
+      - "10252:10252"
+      - "10253:10253"
+      - "10254:10254"
+      - "10255:10255"
+      #- "10250:10250"
+    environment:
+      AZURE_COSMOS_EMULATOR_PARTITION_COUNT: 5
+      AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE: true
+      #AZURE_COSMOS_EMULATOR_IP_ADDRESS_OVERRIDE:"127.0.0.1"
+      AZURE_COSMOS_EMULATOR_KEY: C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVT2nRuJrLqGYWvQ9TjJXgPXSOvJgMVd67WgHQ==
+      # AZURE_COSMOS_EMULATOR_MASTER_KEY: C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVT2nRuJrLqGYWvQ9TjJXgPXSOvJgMVd67WgHQ==
+      # AZURE_COSMOS_EMULATOR_CONNECTION_STRING: AccountEndpoint=https://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVT2nRuJrLqGYWvQ9TjJXgPXSOvJgMVd67WgHQ==;
+    volumes:
+      - ./.containers/cosmos-nosql:/var/lib/cosmosdb
+
+volumes:
+  postgres-db:
+  redis-cache:
+  cosmos-nosql:
+    
+ 
+
+
